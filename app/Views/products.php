@@ -8,12 +8,12 @@
     <form action="/save" method="post">
             <label>UPC</label>
             <input type="text" name="UPC" placeholder="UPC">
-           <br>
+            <br>
             <label>name</label>
-            <input type="text" name="name" placeholder="name" >
+            <input type="text" name="name" placeholder="name">
             <br>
             <label>quantity</label>
-            <input type="text" name="quantity" placeholder="quantity" >
+            <input type="text" name="quantity" placeholder="quantity">
             <br>
             <label>price</label>
             <input type="text" name="price" placeholder="price">
@@ -22,7 +22,7 @@
             <input type="text" name="expiry_date" placeholder="expiry_date">
             <br>
             <label>created_at</label>
-            <input type="text" name="created_at" placeholder="created_at">
+            <input type="text" name="created_at" placeholder="created_at" >
             <br>
             <input type="submit" value="save">
 
@@ -47,7 +47,7 @@
                 <td><?= $pr['price'] ?></td>
                 <td><?= $pr['expiry_date'] ?></td>
                 <td><?= $pr['created_at'] ?></td>
-                <td><a href="/delete/<?= $pr['id']?>">delete</a> </td>
+                <td><a href="/delete/<?= $pr['id']?>">delete</a>|| <a href="/edit/ <?= $pr['id'] ?>">edit</a> </td>
             </tr>
        
             <?php endforeach; ?>
